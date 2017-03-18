@@ -2,6 +2,10 @@ function like(thing) {
   return 'I like ' + thing;
 }
 
-const sentence = `<p>` + like(`apples`) + `.</p>`;
+function love(thing) {
+  return ` but I love ${thing}`;
+}
 
-//document.querySelector('.interpolation').innerHTML = sentence;
+const sentence = `<p> ${like('apples')}, ${love('strawberries')} .</p>`;
+
+document.querySelector('.interpolation').innerHTML = sentence;
